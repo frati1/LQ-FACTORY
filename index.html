@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>LQ Factory — Química de alto rendimiento para el automotor</title>
+<meta name="description" content="Fabricantes de refrigerantes, líquidos de frenos DOT 3/DOT 4 y artículos de limpieza automotriz. Industria Argentina, certificación IRAM. Córdoba — desde 2000.">
+<meta name="keywords" content="refrigerante anticongelante, líquido de frenos DOT 3, líquido de frenos DOT 4, lavacristales, silicona automotor, shampoo siliconado, agua desmineralizada, venta por mayor automotor, Córdoba, LQ Factory">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="LQ Factory">
+<meta name="geo.region" content="AR-X">
+<meta name="geo.placename" content="Córdoba">
+<link rel="canonical" href="https://lqfactory.com.ar/">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" type="image/png" href="assets/logo-nav.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lqfactory.com.ar/">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="LQ Factory">
+<meta property="og:title" content="LQ Factory — Química de alto rendimiento para el automotor">
+<meta property="og:description" content="Refrigerantes, líquidos de frenos y estética automotriz. Industria Argentina · Certificación IRAM · Desde 2000.">
+<meta property="og:image" content="https://lqfactory.com.ar/assets/lineup.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoPartsStore",
+  "name": "LQ Factory",
+  "alternateName": "LQ Factory — Quality in Liquid",
+  "slogan": "Quality in Liquid",
+  "description": "Fabricantes de refrigerantes, líquidos de frenos DOT 3/DOT 4 y artículos de limpieza automotriz. Certificación IRAM. Córdoba, Argentina, desde 2000.",
+  "foundingDate": "2000",
+  "url": "https://lqfactory.com.ar",
+  "logo": "https://lqfactory.com.ar/assets/logo-lockup.png",
+  "image": "https://lqfactory.com.ar/assets/lineup.png",
+  "email": "lqfabrica@gmail.com",
+  "telephone": "+5493517075757",
+  "priceRange": "$$",
+  "currenciesAccepted": "ARS",
+  "paymentAccepted": "Efectivo, Transferencia bancaria",
+  "address": { "@type": "PostalAddress", "addressLocality": "Córdoba", "addressRegion": "Córdoba", "addressCountry": "AR" },
+  "areaServed": { "@type": "Country", "name": "Argentina" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }],
+  "sameAs": ["https://instagram.com/lq.factory"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Hacen envíos a todo el país?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Contamos con logística nacional propia y llegamos a 23 provincias. Coordinamos el envío al confirmar tu pedido por WhatsApp." } },
+    { "@type": "Question", "name": "¿Venden por mayor / a distribuidores?", "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos de forma directa con distribuidores, lubricentros y casas de repuestos, con precio mayorista por volumen." } },
+    { "@type": "Question", "name": "¿Qué formas de pago aceptan?", "acceptedAnswer": { "@type": "Answer", "text": "Transferencia bancaria y efectivo. Para pedidos mayoristas coordinamos las condiciones según el volumen." } },
+    { "@type": "Question", "name": "¿Los productos están certificados?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nuestra línea cumple norma IRAM y se fabrica con control de calidad propio en cada lote." } },
+    { "@type": "Question", "name": "¿Qué presentaciones manejan?", "acceptedAnswer": { "@type": "Answer", "text": "Desde 100 cc hasta tambores de 200 litros, según el producto." } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Saira:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0a0a0c;color:#ededed;font-family:'Saira',sans-serif;-webkit-font-smoothing:antialiased}
+  ::selection{background:#E2241A;color:#fff}
+  @keyframes lqFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes lqMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes lqPulse{0%,100%{opacity:.45}50%{opacity:1}}
+  @keyframes lqFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+  @keyframes lqRise{from{opacity:0;transform:translateY(40px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+  @keyframes lqLineUp{from{transform:translateY(108%)}to{transform:translateY(0)}}
+  @keyframes lqSweep{from{transform:translateX(-135%)}to{transform:translateX(135%)}}
+  @keyframes lqGlow{0%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,30px) scale(1.15)}100%{transform:translate(0,0) scale(1)}}
+  .lq-reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .lq-reveal[data-seen]{opacity:1;transform:none}
+  .lq-card:focus-visible{outline:2px solid #E2241A;outline-offset:-2px}
+  a:focus-visible,button:focus-visible{outline:2px solid #E2241A;outline-offset:3px}
+  .lq-burger{display:none}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:#141417}
+  ::-webkit-scrollbar-thumb{background:#2a2a2e}
+  ::-webkit-scrollbar-thumb:hover{background:#E2241A}
+  @media(max-width:980px){
+    .lq-nav-links{display:none !important}
+    .lq-burger{display:flex !important}
+  }
+  @media(min-width:1025px) and (max-width:1280px){
+    .lq-hero-artbox{width:116% !important;margin-right:-7% !important}
+    .lq-hero-art{min-height:520px !important}
+  }
+  @media(max-width:1024px){
+    #top{padding-top:64px !important;padding-bottom:40px !important}
+    .lq-hero-grid{grid-template-columns:1fr !important;gap:20px !important;text-align:center}
+    .lq-hero-grid .lq-hero-copy{display:flex;flex-direction:column;align-items:center}
+    .lq-hero-art{min-height:auto !important;margin-top:6px}
+    .lq-hero-artbox{width:90% !important;margin-right:0 !important}
+    .lq-stats{justify-content:center !important}
+    .lq-tray-grid{grid-template-columns:1fr !important;gap:28px !important}
+    .lq-tray-art{min-height:auto !important}
+  }
+  @media(max-width:820px){
+    .lq-contact-grid{grid-template-columns:1fr !important}
+    .lq-dist-grid{grid-template-columns:1fr !important;gap:30px !important}
+    .lq-faq-grid{grid-template-columns:1fr !important;gap:28px !important}
+    .lq-whygrid{grid-template-columns:1fr !important;gap:18px !important}
+  }
+  @media(max-width:920px){
+    .lq-why{grid-template-columns:1fr 1fr !important}
+  }
+  @media(max-width:520px){
+    .lq-why{grid-template-columns:1fr !important}
+  }
+  @media(max-width:640px){
+    section h2{font-size:38px !important;line-height:1 !important}
+  }
+  @media(max-width:460px){
+    section h2{font-size:31px !important}
+    .lq-h1{font-size:40px !important}
+    .lq-mile div:first-of-type,.lq-mile>div{font-size:42px}
+    .lq-dist-grid>div:last-child{grid-template-columns:1fr !important}
+  }
+  @media(max-width:760px){
+    .lq-timeline{grid-template-columns:1fr !important;border-top:none !important;gap:0 !important}
+    .lq-tl-rail{display:none !important}
+    .lq-mile{padding:0 0 30px 26px !important;border-left:2px solid rgba(226,36,26,.35);margin-left:4px}
+    .lq-mile:last-child{padding-bottom:0 !important}
+    .lq-mile>span{top:5px !important;left:-7px !important}
+    .lq-mile p{max-width:none !important}
+  }
+  @media(max-width:760px){
+    .lq-modal{grid-template-columns:1fr !important;max-height:90vh !important;overflow-y:auto !important}
+    .lq-modal-img{max-height:40vh !important;padding:18px !important;border-right:none !important;border-bottom:1px solid rgba(255,255,255,.1) !important}
+    .lq-modal-img img{max-height:calc(40vh - 36px) !important}
+    .lq-modal-body{max-height:none !important;overflow:visible !important}
+  }
+  @media(max-width:700px){ .lq-bigL{display:none !important} }
+  @media(max-width:640px){
+    .lq-h1{font-size:46px !important}
+    .lq-tray-h{font-size:38px !important}
+    .lq-contact-h{font-size:42px !important}
+    .lq-pad{padding-left:22px !important;padding-right:22px !important}
+    .lq-stats{gap:22px !important}
+    .lq-cattop{flex-direction:column;align-items:flex-start !important}
+  }
+  @media(max-width:430px){
+    .lq-catalog-grid{grid-template-columns:1fr 1fr !important}
+  }
+</style>
+</helmet>
+
+<div style="background:#0a0a0c;min-height:100vh;overflow-x:hidden">
+
+  <!-- scroll progress -->
+  <div aria-hidden="true" style="position:fixed;top:0;left:0;height:3px;z-index:120;width:0;background:linear-gradient(90deg,#E2241A,#ff6a5e);box-shadow:0 0 12px rgba(226,36,26,.6)" data-progress></div>
+
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:13px 40px;background:rgba(10,10,12,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)" class="lq-pad">
+    <a href="#top" style="display:inline-flex;align-items:center;text-decoration:none">
+      <img src="assets/logo-lockup.png" alt="LQ Factory — Quality in Liquid" style="height:52px;width:auto;display:block">
+    </a>
+    <div class="lq-nav-links" style="display:flex;align-items:center;gap:32px">
+      <a href="#catalogo" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;color:#c9c9cf;text-decoration:none;text-transform:uppercase">Productos</a>
+      <a href="#nosotros" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;color:#c9c9cf;text-decoration:none;text-transform:uppercase">Nosotros</a>
+      <a href="#distribuidores" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;color:#c9c9cf;text-decoration:none;text-transform:uppercase">Distribuidores</a>
+      <a href="#faq" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;color:#c9c9cf;text-decoration:none;text-transform:uppercase">FAQ</a>
+      <a href="#contacto" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:1.5px;color:#c9c9cf;text-decoration:none;text-transform:uppercase">Contacto</a>
+      <a href="{{ waMain }}" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;color:#fff;text-decoration:none;text-transform:uppercase;background:#E2241A;padding:9px 16px;border-radius:2px">WhatsApp</a>
+    </div>
+    <button class="lq-burger" onClick="{{ toggleMenu }}" aria-label="Abrir menú" aria-expanded="{{ menuOpen }}" style="display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:38px;background:none;border:1px solid rgba(255,255,255,.16);border-radius:3px;cursor:pointer;padding:0 9px">
+      <span style="height:2px;background:#fff;border-radius:2px"></span>
+      <span style="height:2px;background:#fff;border-radius:2px"></span>
+      <span style="height:2px;background:#fff;border-radius:2px"></span>
+    </button>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;top:100%;left:0;right:0;background:#0d0d0f;border-bottom:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;padding:8px 22px 18px;box-shadow:0 18px 30px -12px rgba(0,0,0,.6)">
+        <a href="#catalogo" onClick="{{ closeMenu }}" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.5px;color:#e7e7ea;text-decoration:none;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)">Productos</a>
+        <a href="#nosotros" onClick="{{ closeMenu }}" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.5px;color:#e7e7ea;text-decoration:none;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)">Nosotros</a>
+        <a href="#distribuidores" onClick="{{ closeMenu }}" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.5px;color:#e7e7ea;text-decoration:none;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)">Distribuidores</a>
+        <a href="#contacto" onClick="{{ closeMenu }}" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:16px;letter-spacing:1.5px;color:#e7e7ea;text-decoration:none;text-transform:uppercase;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)">Contacto</a>
+        <a href="{{ waMain }}" target="_blank" onClick="{{ closeMenu }}" style="text-align:center;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;color:#fff;text-decoration:none;text-transform:uppercase;background:#E2241A;padding:14px;border-radius:2px;margin-top:14px">Escribir por WhatsApp</a>
+      </div>
+    </sc-if>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="top" style="position:relative;padding:84px 40px 76px;background:radial-gradient(130% 105% at 8% -12%,rgba(226,36,26,.55),transparent 50%),radial-gradient(85% 80% at 100% 115%,rgba(226,36,26,.32),transparent 56%),linear-gradient(160deg,#1c0608 0%,#11050a 42%,#0a0a0c 100%);overflow:hidden">
+    <div aria-hidden="true" style="position:absolute;top:-120px;left:-80px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(226,36,26,.5),transparent 64%);filter:blur(48px);pointer-events:none;animation:lqGlow 14s ease-in-out infinite"></div>
+    <div class="lq-hero-grid" style="position:relative;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center">
+      <div class="lq-hero-copy" style="animation:lqFade .7s ease both">
+        <div style="display:inline-flex;align-items:center;gap:9px;margin-bottom:22px">
+          <span style="width:7px;height:7px;background:#E2241A;border-radius:50%;animation:lqPulse 2.2s infinite"></span>
+          <span style="font-family:'Saira',sans-serif;font-size:11px;font-weight:500;letter-spacing:3px;color:#E2241A;text-transform:uppercase">Quality in Liquid · Córdoba, Argentina</span>
+        </div>
+        <h1 class="lq-h1" style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:74px;line-height:.92;letter-spacing:-.5px;text-transform:uppercase;color:#fff"><span style="display:block;overflow:hidden"><span style="display:inline-block;animation:lqLineUp .85s cubic-bezier(.2,.75,.2,1) .05s both">Química de</span></span><span style="display:block;overflow:hidden"><span style="display:inline-block;font-style:italic;color:#E2241A;animation:lqLineUp .85s cubic-bezier(.2,.75,.2,1) .19s both">alto</span></span><span style="display:block;overflow:hidden"><span style="display:inline-block;animation:lqLineUp .85s cubic-bezier(.2,.75,.2,1) .33s both">rendimiento</span></span></h1>
+        <p style="margin:24px 0 0;max-width:480px;font-size:16px;line-height:1.65;color:#a7a7ad">Fabricantes de <strong style="color:#cfcfd4;font-weight:600">refrigerantes anticongelantes</strong>, <strong style="color:#cfcfd4;font-weight:600">líquidos de frenos DOT 3 y DOT 4</strong>, lavacristales, siliconas y estética automotriz — producidos en <strong style="color:#cfcfd4;font-weight:600">Córdoba, Argentina</strong> con certificación IRAM.</p>
+        <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap">
+          <a href="#catalogo" style="display:inline-flex;align-items:center;gap:10px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#E2241A;padding:15px 26px;text-decoration:none;border-radius:2px">Ver catálogo <span style="font-size:16px">→</span></a>
+          <a href="#contacto" style="display:inline-flex;align-items:center;gap:10px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#e7e7ea;text-decoration:none;padding:15px 6px">Contacto directo <span style="font-size:16px;color:#E2241A">→</span></a>
+        </div>
+        <div style="height:1px;background:linear-gradient(90deg,rgba(255,255,255,.16),transparent);margin:34px 0 22px;max-width:520px"></div>
+        <div class="lq-stats" style="display:flex;gap:38px;flex-wrap:wrap">
+          <div>
+            <div data-count="25" style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:34px;color:#fff;line-height:1">25</div>
+            <div style="font-family:'Saira',sans-serif;font-size:9px;letter-spacing:2px;color:#8a8a90;text-transform:uppercase;margin-top:3px">Años en el mercado</div>
+          </div>
+          <div>
+            <div data-count="13" style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:34px;color:#fff;line-height:1">13</div>
+            <div style="font-family:'Saira',sans-serif;font-size:9px;letter-spacing:2px;color:#8a8a90;text-transform:uppercase;margin-top:3px">Productos en línea</div>
+          </div>
+          <div>
+            <div data-count="23" style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:34px;color:#fff;line-height:1">23</div>
+            <div style="font-family:'Saira',sans-serif;font-size:9px;letter-spacing:2px;color:#8a8a90;text-transform:uppercase;margin-top:3px">Provincias</div>
+          </div>
+          <div>
+            <div style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:34px;color:#E2241A;line-height:1">IRAM</div>
+            <div style="font-family:'Saira',sans-serif;font-size:9px;letter-spacing:2px;color:#8a8a90;text-transform:uppercase;margin-top:3px">Certificado</div>
+          </div>
+        </div>
+      </div>
+      <div class="lq-hero-art" style="position:relative;display:flex;justify-content:center;align-items:flex-end;min-height:620px">
+        <div class="lq-hero-artbox" style="position:relative;width:140%;margin-right:-20%;animation:lqRise .95s cubic-bezier(.2,.75,.2,1) both,lqFloat 6s ease-in-out 1.2s infinite">
+          <img src="assets/lineup.png" alt="Línea completa de productos LQ Factory" style="display:block;width:100%;height:auto;object-fit:contain">
+          <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(108deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);-webkit-mask:url(assets/lineup.png) center/contain no-repeat;mask:url(assets/lineup.png) center/contain no-repeat;animation:lqSweep 1.5s ease .75s 1 both"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MARQUEE ===== -->
+  <sc-if value="{{ showMarquee }}" hint-placeholder-val="{{ true }}">
+    <div style="border-top:1px solid rgba(226,36,26,.45);border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(90deg,#13070a,#0d0d0f 40%);overflow:hidden;white-space:nowrap;padding:13px 0">
+      <div style="display:inline-flex;gap:0;animation:lqMarquee 32s linear infinite;will-change:transform">
+        <span style="font-family:'Saira',sans-serif;font-size:12px;font-weight:500;letter-spacing:3px;color:#8a8a90;text-transform:uppercase">&nbsp;25 años en el mercado&nbsp;&nbsp;·&nbsp;&nbsp;Fabricación 100% propia&nbsp;&nbsp;·&nbsp;&nbsp;Logística nacional&nbsp;&nbsp;·&nbsp;&nbsp;Agua desmineralizada&nbsp;&nbsp;·&nbsp;&nbsp;Refrigerante anticongelante&nbsp;&nbsp;·&nbsp;&nbsp;Líquido de frenos DOT 4&nbsp;&nbsp;·&nbsp;&nbsp;Certificado IRAM&nbsp;&nbsp;·&nbsp;&nbsp;Estética automotriz&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        <span style="font-family:'Saira',sans-serif;font-size:12px;font-weight:500;letter-spacing:3px;color:#8a8a90;text-transform:uppercase">25 años en el mercado&nbsp;&nbsp;·&nbsp;&nbsp;Fabricación 100% propia&nbsp;&nbsp;·&nbsp;&nbsp;Logística nacional&nbsp;&nbsp;·&nbsp;&nbsp;Agua desmineralizada&nbsp;&nbsp;·&nbsp;&nbsp;Refrigerante anticongelante&nbsp;&nbsp;·&nbsp;&nbsp;Líquido de frenos DOT 4&nbsp;&nbsp;·&nbsp;&nbsp;Certificado IRAM&nbsp;&nbsp;·&nbsp;&nbsp;Estética automotriz&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section id="catalogo" style="position:relative;color:#fff;background:#101013">
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 70% at 50% 0%,rgba(226,36,26,.10),transparent 58%)"></div>
+    <div class="lq-pad lq-reveal" style="position:relative;max-width:1160px;margin:0 auto;padding:78px 40px 70px">
+      <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;color:#E2241A;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#E2241A"></span>Catálogo {{ catalogYear }}</div>
+      <div class="lq-cattop" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:18px;margin-bottom:24px">
+        <h2 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:46px;line-height:1;text-transform:uppercase;color:#fff">Nuestros productos</h2>
+        <button onClick="{{ downloadPdf }}" style="display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.22);padding:11px 18px;border-radius:2px" style-hover="border-color:#E2241A;background:rgba(226,36,26,.12)"><span style="font-size:15px">↓</span> {{ pdfLabel }}</button>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:22px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ cats }}" as="c" hint-placeholder-count="5">
+            <button onClick="{{ c.onSel }}" style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;padding:9px 16px;border-radius:2px;background:{{ c.bg }};color:{{ c.color }};border:1px solid {{ c.border }};transition:all .15s">{{ c.label }}</button>
+          </sc-for>
+        </div>
+        <div style="position:relative;display:flex;align-items:center">
+          <span style="position:absolute;left:12px;color:#a8a39a;font-size:14px;pointer-events:none">⌕</span>
+          <input value="{{ searchVal }}" onInput="{{ onSearch }}" placeholder="Buscar producto..." aria-label="Buscar producto" style="font-family:'Saira',sans-serif;font-size:14px;color:#fff;background:#16161a;border:1px solid rgba(255,255,255,.16);border-radius:2px;padding:10px 14px 10px 32px;width:220px;outline:none">
+        </div>
+      </div>
+
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#8a8a90;text-transform:uppercase;margin-bottom:18px">{{ countText }}</div>
+
+      <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:50px 20px;text-align:center;border:1px dashed rgba(255,255,255,.16);background:rgba(255,255,255,.03)">
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:#fff">Sin resultados</div>
+          <p style="margin:8px 0 0;font-size:14px;color:#9a9aa0">Probá con otro término o categoría.</p>
+        </div>
+      </sc-if>
+
+      <div class="lq-catalog-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:14px">
+        <sc-for list="{{ list }}" as="p" hint-placeholder-count="10">
+          <div class="lq-card" role="button" tabindex="0" aria-label="Ver ficha técnica de {{ p.name }}" onClick="{{ p.open }}" onKeyDown="{{ p.onKey }}" onMouseMove="{{ p.onMove }}" onMouseLeave="{{ p.onLeave }}" style="cursor:pointer;background:linear-gradient(180deg,#1b1b20,#141417);border:1px solid rgba(255,255,255,.08);border-radius:3px;overflow:hidden;transition:box-shadow .22s,transform .22s,border-color .22s;position:relative;animation:lqFade .5s ease both;box-shadow:0 10px 24px -16px rgba(0,0,0,.85)" style-hover="box-shadow:0 24px 44px -18px rgba(226,36,26,.5);transform:translateY(-4px);border-color:#E2241A;z-index:2">
+            <div data-spot style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .25s;z-index:4"></div>
+            <div style="height:3px;background:linear-gradient(90deg,#E2241A,transparent 70%)"></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 13px 9px">
+              <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:#74747a">Nº {{ p.code }}</span>
+              <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#E2241A">{{ p.badge }}</span>
+            </div>
+            <div style="position:relative;height:206px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;margin:0 12px;border-radius:2px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)">
+              <img src="{{ p.img }}" alt="{{ p.name }}" loading="lazy" style="display:block;max-width:100%;max-height:100%;object-fit:contain">
+            </div>
+            <div style="padding:15px 14px 16px">
+              <h3 style="margin:0 0 4px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:17px;line-height:1.05;text-transform:uppercase;color:#fff;min-height:36px">{{ p.name }}</h3>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:10px;border-top:1px solid rgba(255,255,255,.07)">
+                <span style="font-family:'Saira',sans-serif;font-size:11px;letter-spacing:1px;color:#8a8a90;text-transform:uppercase">{{ p.envase }}</span>
+                <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#E2241A">Ficha →</span>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ LQ ===== -->
+  <section style="position:relative;background:#0a0a0c">
+    <div class="lq-pad lq-reveal" style="max-width:1160px;margin:0 auto;padding:80px 40px">
+      <div style="width:40px;height:4px;background:#E2241A;margin-bottom:16px"></div>
+      <div class="lq-whygrid" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:44px">
+        <h2 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:46px;line-height:1;text-transform:uppercase;color:#fff">Calidad que se nota<br>en cada <span style="color:#E2241A">gota.</span></h2>
+        <p style="margin:0;font-size:16px;line-height:1.65;color:#a7a7ad">No somos revendedores: fabricamos cada producto bajo norma IRAM, con control de calidad propio. Una línea completa con la misma protección premium en cada producto.</p>
+      </div>
+      <div class="lq-why" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+        <div style="background:linear-gradient(180deg,#16161a,#101013);border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:26px 22px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px;margin-bottom:14px">[ 01 ]</div>
+          <h3 style="margin:0 0 8px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;color:#fff">Fabricación propia</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9a9aa0">Producimos en planta, sin intermediarios. Control de calidad en cada lote.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#16161a,#101013);border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:26px 22px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px;margin-bottom:14px">[ 02 ]</div>
+          <h3 style="margin:0 0 8px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;color:#fff">Certificación IRAM</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9a9aa0">Formulaciones que cumplen las normas DOT 3 / DOT 4 y estándares IRAM.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#16161a,#101013);border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:26px 22px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px;margin-bottom:14px">[ 03 ]</div>
+          <h3 style="margin:0 0 8px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;color:#fff">Cobertura nacional</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9a9aa0">Logística propia a 23 provincias. Autos, camiones, maquinaria y GNC.</p>
+        </div>
+        <div style="background:linear-gradient(180deg,#16161a,#101013);border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:26px 22px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px;margin-bottom:14px">[ 04 ]</div>
+          <h3 style="margin:0 0 8px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;color:#fff">Línea completa</h3>
+          <p style="margin:0;font-size:14px;line-height:1.6;color:#9a9aa0">Refrigeración, frenos, estética y mantenimiento en una sola marca.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS / TRAYECTORIA ===== -->
+  <section id="nosotros" style="position:relative;overflow:hidden;background:#0c0c0e">
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(80% 70% at 88% 18%,rgba(226,36,26,.12),transparent 58%)"></div>
+
+    <div class="lq-pad lq-reveal" style="position:relative;max-width:1160px;margin:0 auto;padding:84px 40px 30px">
+      <div class="lq-tray-grid" style="display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center">
+        <div>
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;color:#E2241A;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#E2241A"></span>Nuestra trayectoria</div>
+          <h2 class="lq-tray-h" style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:54px;line-height:.96;text-transform:uppercase;color:#fff">Un cuarto de siglo<br>fabricando <span style="color:#E2241A">confianza.</span></h2>
+          <p style="margin:24px 0 0;max-width:440px;font-size:16px;line-height:1.65;color:#a7a7ad">Desde el año 2000 fabricamos productos químicos para el automotor con los más altos estándares de calidad. Sin intermediarios, trato directo con distribuidores, lubricentros y autopartes en todo el país.</p>
+          <a href="{{ waMain }}" target="_blank" style="display:inline-flex;align-items:center;gap:10px;margin-top:30px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#E2241A;padding:15px 26px;text-decoration:none;border-radius:2px">Hacer un pedido <span style="font-size:16px">→</span></a>
+        </div>
+        <div class="lq-tray-art" style="position:relative;display:flex;justify-content:center;align-items:flex-end;min-height:360px">
+          <img src="assets/lineup.png" alt="Línea completa de productos LQ Factory" style="position:relative;display:block;width:108%;max-width:none;height:auto;object-fit:contain;animation:lqFloat 6s ease-in-out .5s infinite">
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="lq-pad lq-reveal" style="position:relative;max-width:1160px;margin:0 auto;padding:30px 40px 86px">
+      <div class="lq-timeline" style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.12)">
+        <div class="lq-tl-rail" style="position:absolute;top:-1px;left:0;width:100%;height:2px;background:linear-gradient(90deg,#E2241A,rgba(226,36,26,.15))"></div>
+        <sc-for list="{{ milestones }}" as="m" hint-placeholder-count="4">
+          <div class="lq-mile" style="position:relative;padding:30px 22px 0 0">
+            <span style="position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:#E2241A;box-shadow:0 0 0 4px rgba(226,36,26,.18)"></span>
+            <div style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:50px;line-height:1;color:#fff">{{ m.year }}</div>
+            <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;color:#E2241A;margin:8px 0 6px">{{ m.title }}</div>
+            <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9aa0;max-width:210px">{{ m.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISTRIBUIDORES ===== -->
+  <section id="distribuidores" style="position:relative;background:#101012">
+    <div class="lq-dist-grid lq-pad lq-reveal" style="max-width:1160px;margin:0 auto;padding:74px 40px;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center">
+      <div>
+        <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;color:#E2241A;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#E2241A"></span>Venta mayorista</div>
+        <h2 style="margin:0 0 18px;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:46px;line-height:.98;text-transform:uppercase;color:#fff">Sumáte como<br>distribuidor</h2>
+        <p style="margin:0 0 28px;max-width:430px;font-size:16px;line-height:1.65;color:#a7a7ad">Trabajamos de forma directa con distribuidores, lubricentros y casas de repuestos en todo el país. Sin intermediarios, con precio mayorista y respaldo de fábrica.</p>
+        <a href="{{ waDist }}" target="_blank" style="display:inline-flex;align-items:center;gap:10px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#E2241A;padding:15px 26px;text-decoration:none;border-radius:2px">Quiero ser distribuidor <span style="font-size:16px">→</span></a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div style="background:#16161a;border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:22px 20px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px">[ 01 ]</div>
+          <h3 style="margin:12px 0 6px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;color:#fff">Precio mayorista</h3>
+          <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9aa0">Listas especiales por volumen, directo de fábrica.</p>
+        </div>
+        <div style="background:#16161a;border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:22px 20px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px">[ 02 ]</div>
+          <h3 style="margin:12px 0 6px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;color:#fff">Sin intermediarios</h3>
+          <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9aa0">Trato directo con la fábrica, mejor margen para vos.</p>
+        </div>
+        <div style="background:#16161a;border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:22px 20px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px">[ 03 ]</div>
+          <h3 style="margin:12px 0 6px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;color:#fff">Logística nacional</h3>
+          <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9aa0">Envíos a todo el país, en 23 provincias.</p>
+        </div>
+        <div style="background:#16161a;border:1px solid rgba(255,255,255,.08);border-top:2px solid #E2241A;padding:22px 20px">
+          <div style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A;letter-spacing:1px">[ 04 ]</div>
+          <h3 style="margin:12px 0 6px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:19px;text-transform:uppercase;color:#fff">Respaldo de marca</h3>
+          <p style="margin:0;font-size:13px;line-height:1.55;color:#9a9aa0">Calidad IRAM y material de venta para tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" style="position:relative;background:#0c0c0e">
+    <div class="lq-faq-grid lq-pad lq-reveal" style="max-width:1160px;margin:0 auto;padding:78px 40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:start">
+      <div>
+        <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;color:#E2241A;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#E2241A"></span>Preguntas frecuentes</div>
+        <h2 style="margin:0 0 18px;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:44px;line-height:.98;text-transform:uppercase;color:#fff">Antes de<br>escribirnos</h2>
+        <p style="margin:0;max-width:330px;font-size:15px;line-height:1.65;color:#a7a7ad">¿Tenés otra consulta? Escribinos por WhatsApp y te respondemos al instante.</p>
+      </div>
+      <div>
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+          <div style="border-bottom:1px solid rgba(255,255,255,.1)">
+            <button onClick="{{ f.onToggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:none;border:none;cursor:pointer;text-align:left;padding:22px 4px;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:#fff;letter-spacing:.3px">
+              <span>{{ f.q }}</span>
+              <span style="flex:none;font-family:'Saira',sans-serif;font-weight:300;font-size:26px;line-height:1;color:#E2241A">{{ f.sign }}</span>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;padding:0 4px 24px;font-size:15px;line-height:1.65;color:#a7a7ad;max-width:620px">{{ f.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" style="background:#fff;color:#16161a">
+    <div class="lq-contact-grid" style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr">
+      <div class="lq-pad lq-reveal" style="padding:80px 56px 80px 40px">
+        <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:13px;color:#E2241A;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#E2241A"></span>Contacto directo</div>
+        <h2 style="margin:0 0 34px;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:58px;line-height:.95;text-transform:uppercase;color:#16161a">Hablemos<br>de tu<br>pedido.</h2>
+
+        <a href="{{ waMain }}" target="_blank" style="display:flex;align-items:center;gap:18px;padding:20px 0;border-top:1px solid #e6e1d8;text-decoration:none">
+          <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#a8a39a;text-transform:uppercase;width:96px">WhatsApp</span>
+          <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:22px;color:#16161a">{{ brand.phone }}</span>
+        </a>
+        <a href="mailto:lqfabrica@gmail.com" style="display:flex;align-items:center;gap:18px;padding:20px 0;border-top:1px solid #e6e1d8;text-decoration:none">
+          <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#a8a39a;text-transform:uppercase;width:96px">Email</span>
+          <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:22px;color:#16161a;text-transform:uppercase">{{ brand.mail }}</span>
+        </a>
+        <a href="{{ brand.igUrl }}" target="_blank" style="display:flex;align-items:center;gap:18px;padding:20px 0;border-top:1px solid #e6e1d8;border-bottom:1px solid #e6e1d8;text-decoration:none">
+          <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#a8a39a;text-transform:uppercase;width:96px">Instagram</span>
+          <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:22px;color:#16161a">{{ brand.ig }}</span>
+        </a>
+        <div style="display:inline-flex;align-items:center;gap:10px;margin-top:26px">
+          <span style="width:7px;height:7px;background:#E2241A;border-radius:50%"></span>
+          <span style="font-family:'Saira',sans-serif;font-size:11px;letter-spacing:2px;color:#6b6b70;text-transform:uppercase">IRAM Certificado · Fabricación propia · Córdoba</span>
+        </div>
+      </div>
+
+      <div style="background:#E2241A;color:#fff;padding:56px 44px;display:flex;flex-direction:column">
+        <div style="font-family:'Saira',sans-serif;font-size:10px;letter-spacing:3px;color:rgba(255,255,255,.7);text-transform:uppercase">Trayectoria</div>
+        <div style="font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:108px;line-height:.85;margin:6px 0 2px">25</div>
+        <div style="font-family:'Saira',sans-serif;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.85);text-transform:uppercase;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.25)">Años en el mercado</div>
+
+        <div style="padding:24px 0 0">
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.7);text-transform:uppercase;margin-bottom:4px">Atención</div>
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:19px;margin-bottom:18px">Lun a Vie · 8 a 18 hs</div>
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.7);text-transform:uppercase;margin-bottom:4px">Envíos</div>
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:19px;margin-bottom:18px">Todo el país</div>
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.7);text-transform:uppercase;margin-bottom:4px">Pagos</div>
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:19px">Transferencia · Efectivo</div>
+        </div>
+        <a href="{{ waMain }}" target="_blank" style="margin-top:auto;display:block;text-align:center;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#16161a;padding:16px;text-decoration:none;border-radius:2px">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#08080a;border-top:1px solid rgba(255,255,255,.06);padding:42px 40px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:22px">
+      <div>
+        <img src="assets/logo-lockup.png" alt="LQ Factory — Quality in Liquid" style="height:60px;width:auto;display:block;margin-bottom:14px">
+        <div style="font-family:'Saira',sans-serif;font-size:12px;color:#74747a;max-width:360px;line-height:1.5">Fabricantes y distribuidores de líquidos para el automotor. Córdoba, Argentina · Desde 2000.</div>
+      </div>
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <a href="mailto:lqfabrica@gmail.com" style="font-family:'Saira',sans-serif;font-size:12px;letter-spacing:1px;color:#9a9aa0;text-decoration:none">lqfabrica@gmail.com</a>
+        <a href="{{ brand.igUrl }}" target="_blank" style="font-family:'Saira',sans-serif;font-size:12px;letter-spacing:1px;color:#9a9aa0;text-decoration:none">@lq.factory</a>
+        <a href="{{ brand.webUrl }}" target="_blank" style="font-family:'Saira',sans-serif;font-size:12px;letter-spacing:1px;color:#9a9aa0;text-decoration:none">lqfactory.com.ar</a>
+      </div>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#5a5a60">© 2026 LQ Factory</div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL FICHA TÉCNICA ===== -->
+  <sc-if value="{{ hasModal }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ close }}" role="dialog" aria-modal="true" aria-label="Ficha técnica del producto" style="position:fixed;inset:0;z-index:100;background:rgba(5,5,6,.85);backdrop-filter:blur(7px);display:flex;align-items:center;justify-content:center;padding:26px;animation:lqFade .22s ease both">
+      <div onClick="{{ stop }}" class="lq-modal" style="position:relative;width:100%;max-width:1080px;max-height:92vh;overflow:hidden;background:#0f0f12;border:1px solid rgba(255,255,255,.12);display:grid;grid-template-columns:.92fr 1.08fr">
+        <button onClick="{{ close }}" data-modal-close aria-label="Cerrar ficha" style="position:absolute;top:14px;right:14px;z-index:5;cursor:pointer;width:40px;height:40px;border:1px solid rgba(255,255,255,.22);background:rgba(15,15,18,.72);color:#fff;font-size:19px;font-family:'Saira',sans-serif;line-height:1">✕</button>
+        <div class="lq-modal-img" style="background:#fff;display:flex;align-items:center;justify-content:center;border-right:1px solid rgba(255,255,255,.1);padding:30px">
+          {{ curImgEl }}
+        </div>
+        <div class="lq-modal-body" style="overflow-y:auto;max-height:92vh;padding:38px 36px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+            <span style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#E2241A;padding:5px 11px">{{ cur.badge }}</span>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#74747a">Nº {{ cur.code }}</span>
+          </div>
+          <h2 style="margin:0 0 8px;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:34px;line-height:.98;text-transform:uppercase;color:#fff">{{ cur.name }}</h2>
+          <p style="margin:0 0 22px;font-size:15px;line-height:1.55;color:#b9b9bf">{{ cur.tag }}</p>
+
+          <sc-if value="{{ hasDesc }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 24px;font-size:14px;line-height:1.65;color:#9a9aa0;padding-left:14px;border-left:2px solid #E2241A">{{ cur.desc }}</p>
+          </sc-if>
+
+          <div style="display:flex;align-items:center;gap:9px;margin:0 0 12px"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A">▸</span><h4 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff">Características</h4></div>
+          <ul style="margin:0 0 26px;padding:0;list-style:none">
+            <sc-for list="{{ curFeats }}" as="f" hint-placeholder-count="4">
+              <li style="display:flex;gap:11px;padding:8px 0;font-size:14px;line-height:1.5;color:#cfcfd4;border-bottom:1px solid rgba(255,255,255,.06)"><span style="color:#E2241A;font-weight:700">✓</span><span>{{ f }}</span></li>
+            </sc-for>
+          </ul>
+
+          <sc-if value="{{ hasBens }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:9px;margin:0 0 12px"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A">▸</span><h4 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff">Beneficios</h4></div>
+            <ul style="margin:0 0 26px;padding:0;list-style:none">
+              <sc-for list="{{ curBens }}" as="b" hint-placeholder-count="3">
+                <li style="display:flex;gap:11px;padding:8px 0;font-size:14px;line-height:1.5;color:#cfcfd4;border-bottom:1px solid rgba(255,255,255,.06)"><span style="color:#E2241A;font-weight:700">✓</span><span>{{ b }}</span></li>
+              </sc-for>
+            </ul>
+          </sc-if>
+
+          <sc-if value="{{ hasApps }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:9px;margin:0 0 12px"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A">▸</span><h4 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff">Aplicaciones</h4></div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px">
+              <sc-for list="{{ curApps }}" as="a" hint-placeholder-count="4">
+                <span style="font-family:'Saira',sans-serif;font-size:13px;color:#cfcfd4;background:#1a1a1e;border:1px solid rgba(255,255,255,.1);padding:7px 13px">{{ a }}</span>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <div style="display:flex;align-items:center;gap:9px;margin:0 0 12px"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A">▸</span><h4 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff">Datos técnicos</h4></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);margin-bottom:26px">
+            <sc-for list="{{ curSpecs }}" as="s" hint-placeholder-count="4">
+              <div style="background:#141417;padding:13px 15px">
+                <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#74747a;margin-bottom:5px">{{ s.k }}</div>
+                <div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:17px;color:#fff">{{ s.v }}</div>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:9px;margin:0 0 12px"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#E2241A">▸</span><h4 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff">Presentaciones</h4></div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+            <sc-for list="{{ curPres }}" as="pr" hint-placeholder-count="3">
+              <span style="font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:15px;letter-spacing:.5px;color:#fff;background:#1a1a1e;border:1px solid rgba(226,36,26,.4);padding:8px 14px">{{ pr }}</span>
+            </sc-for>
+          </div>
+
+          <a href="{{ curWa }}" target="_blank" style="display:block;text-align:center;font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:#E2241A;padding:16px;text-decoration:none;border-radius:2px">Consultar este producto</a>
+          <p style="margin:13px 0 0;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:#5a5a60;text-align:center">Industria Argentina · Quality in Liquid</p>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <!-- ===== FAB WHATSAPP ===== -->
+  <a href="{{ waMain }}" target="_blank" aria-label="Escribinos por WhatsApp" style="position:fixed;right:20px;bottom:20px;z-index:90;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.4);text-decoration:none">
+    <svg width="30" height="30" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16.04 4C9.93 4 4.98 8.95 4.98 15.06c0 2.13.6 4.12 1.64 5.81L4.8 27.2l6.5-1.78a11.02 11.02 0 0 0 4.74 1.07h.01c6.11 0 11.06-4.95 11.06-11.06C27.11 8.95 22.15 4 16.04 4zm0 20.2c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.86 1.05 1.03-3.76-.2-.31a9.13 9.13 0 0 1-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.96 6.48 2.69a9.1 9.1 0 0 1 2.68 6.48c0 5.06-4.11 9.17-9.16 9.17zm5.03-6.86c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.13-.62.14-.18.27-.71.9-.87 1.08-.16.18-.32.2-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.14-.16.18-.27.27-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.53-.45-.46-.62-.47-.16-.01-.34-.01-.53-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3 0 1.36.99 2.67 1.12 2.85.14.18 1.94 2.96 4.7 4.15.66.28 1.17.45 1.57.58.66.21 1.26.18 1.74.11.53-.08 1.63-.67 1.86-1.31.23-.64.23-1.2.16-1.31-.07-.11-.25-.18-.52-.32z"/></svg>
+  </a>
+
+</div>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#0a0a0c"/>
+    <rect x="0" y="0" width="100" height="4" fill="#E2241A"/>
+    <ellipse cx="50" cy="50" rx="30" ry="20" fill="#0d0d0f" stroke="#c9ccd2" stroke-width="2"/>
+    <path d="M50 30 A30 20 0 0 0 50 70 Z" fill="#E2241A"/>
+    <text x="50" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">LQ</text>
+  </svg>
+</template></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1160,&quot;height&quot;:900},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5493517075757&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showMarquee&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;catalogYear&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { openId: null, cat: 'Todos', query: '', menuOpen: false, pdfBusy: false, faqOpen: 0 };
+
+  brand = {
+    ig:'@lq.factory', igUrl:'https://instagram.com/lq.factory',
+    mail:'lqfabrica@gmail.com', phone:'+54 9 351 707-5757',
+    web:'lqfactory.com.ar', webUrl:'https://lqfactory.com.ar'
+  };
+
+  faqList = [
+    { q:'¿Hacen envíos a todo el país?', a:'Sí. Contamos con logística nacional propia y llegamos a 23 provincias. Coordinamos el envío al confirmar tu pedido por WhatsApp.' },
+    { q:'¿Venden por mayor / a distribuidores?', a:'Trabajamos de forma directa con distribuidores, lubricentros y casas de repuestos, con precio mayorista por volumen. Escribinos y armamos tu lista.' },
+    { q:'¿Qué formas de pago aceptan?', a:'Transferencia bancaria y efectivo. Para pedidos mayoristas coordinamos las condiciones según el volumen.' },
+    { q:'¿Los productos están certificados?', a:'Sí. Nuestra línea cumple norma IRAM y se fabrica con control de calidad propio en cada lote.' },
+    { q:'¿Qué presentaciones manejan?', a:'Desde 100 cc hasta tambores de 200 litros, según el producto. En cada ficha técnica vas a ver las presentaciones disponibles.' }
+  ];
+
+  products = [
+    { id:'ref-rosa', code:'001', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante Anticongelante Rosa', img:'assets/p/001.png', ficha:'assets/refrigerante.png', envase:'Envase × 5 LTS',
+      tag:'Protección térmica y anticorrosiva para todo tipo de motor.',
+      feats:['Protección anticorrosiva','Compatible con auto, camión, maquinaria y GNC','Evita el sobrecalentamiento y el congelamiento del motor','Apto para uso en invierno y verano'],
+      specs:[{k:'Color',v:'Rosa'},{k:'Tipo',v:'Anticongelante / anticorrosivo'},{k:'Protección',v:'Hasta -19 °C'},{k:'Calidad',v:'Premium'}],
+      pres:['1 L','5 L'] },
+
+    { id:'ref-verde', code:'002', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante Anticongelante Verde', img:'assets/p/002.png', ficha:'assets/refrigerante.png', envase:'Envase × 5 LTS',
+      tag:'Protección térmica y anticorrosiva para todo tipo de motor.',
+      feats:['Protección anticorrosiva','Compatible con auto, camión, maquinaria y GNC','Evita el sobrecalentamiento y el congelamiento del motor','Apto para uso en invierno y verano'],
+      specs:[{k:'Color',v:'Verde'},{k:'Tipo',v:'Anticongelante / anticorrosivo'},{k:'Protección',v:'Hasta -19 °C'},{k:'Calidad',v:'Premium'}],
+      pres:['1 L','5 L'] },
+
+    { id:'ref-amarillo', code:'003', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante Anticongelante Amarillo', img:'assets/p/003.png', ficha:'assets/refrigerante.png', envase:'Envase × 5 LTS',
+      tag:'Protección térmica y anticorrosiva para todo tipo de motor.',
+      feats:['Protección anticorrosiva','Compatible con auto, camión, maquinaria y GNC','Evita el sobrecalentamiento y el congelamiento del motor','Apto para uso en invierno y verano'],
+      specs:[{k:'Color',v:'Amarillo'},{k:'Tipo',v:'Anticongelante / anticorrosivo'},{k:'Protección',v:'Hasta -19 °C'},{k:'Calidad',v:'Premium'}],
+      pres:['1 L','5 L'] },
+
+    { id:'ref30-rosa', code:'004', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante 30% Rosa', img:'assets/p/004.png', ficha:'assets/refrigerante-30.png', envase:'Envase × 5 LTS',
+      tag:'Fórmula premezclada al 30%, lista para usar sin dilución.',
+      feats:['Lista para usar, sin necesidad de dilución','Alta protección anticongelante y anticorrosiva','Compatible con vehículos nafteros, diésel y GNC','Uso invierno y verano'],
+      bens:['Protección térmica inmediata','Con inhibidor de corrosión'],
+      specs:[{k:'Color',v:'Rosa'},{k:'Concentración',v:'30% premezclada'},{k:'Protección',v:'Hasta -19 °C'},{k:'Inhibidor',v:'De corrosión'}],
+      pres:['5 L'] },
+
+    { id:'ref30-verde', code:'005', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante 30% Verde', img:'assets/p/005.png', ficha:'assets/refrigerante-30.png', envase:'Envase × 5 LTS',
+      tag:'Fórmula premezclada al 30%, lista para usar sin dilución.',
+      feats:['Lista para usar, sin necesidad de dilución','Alta protección anticongelante y anticorrosiva','Compatible con vehículos nafteros, diésel y GNC','Uso invierno y verano'],
+      bens:['Protección térmica inmediata','Con inhibidor de corrosión'],
+      specs:[{k:'Color',v:'Verde'},{k:'Concentración',v:'30% premezclada'},{k:'Protección',v:'Hasta -19 °C'},{k:'Inhibidor',v:'De corrosión'}],
+      pres:['5 L'] },
+
+    { id:'ref30-amarillo', code:'006', cat:'Refrigerantes', badge:'Refrigerante', name:'Refrigerante 30% Amarillo', img:'assets/p/006.png', ficha:'assets/refrigerante-30.png', envase:'Envase × 5 LTS',
+      tag:'Fórmula premezclada al 30%, lista para usar sin dilución.',
+      feats:['Lista para usar, sin necesidad de dilución','Alta protección anticongelante y anticorrosiva','Compatible con vehículos nafteros, diésel y GNC','Uso invierno y verano'],
+      bens:['Protección térmica inmediata','Con inhibidor de corrosión'],
+      specs:[{k:'Color',v:'Amarillo'},{k:'Concentración',v:'30% premezclada'},{k:'Protección',v:'Hasta -19 °C'},{k:'Inhibidor',v:'De corrosión'}],
+      pres:['5 L'] },
+
+    { id:'agua', code:'007', cat:'Agua', badge:'Agua', name:'Agua Desmineralizada LQ', img:'assets/p/007.png', ficha:'assets/p/007.png', envase:'Envase × 5 LTS',
+      tag:'Agua tratada, libre de sales y minerales, para uso técnico.',
+      desc:'Agua desmineralizada de alta pureza, ideal para la dilución de refrigerantes concentrados, recarga de baterías y todo uso que requiera agua libre de minerales.',
+      feats:['Alta pureza, libre de sales y minerales','Ideal para diluir refrigerante concentrado','Apta para recarga de baterías','Evita incrustaciones en el sistema'],
+      specs:[{k:'Tipo',v:'Desmineralizada'},{k:'Pureza',v:'Alta'},{k:'Uso',v:'Refrigerante / baterías'},{k:'Minerales',v:'Libre'}],
+      pres:['5 L'] },
+
+    { id:'dot3', code:'008', cat:'Liq. de Frenos', badge:'Frenos', name:'Líquido de Frenos DOT 3', img:'assets/p/008.png', ficha:'assets/dot3.png', envase:'Envase × 500 CC',
+      tag:'Seguridad y respuesta inmediata en cada frenada.',
+      feats:['Cumple norma DOT 3','Alto punto de ebullición','Protección contra la corrosión'],
+      bens:['Mantiene la firmeza en el pedal de freno','Reduce el riesgo de vapor lock','Compatible con sistemas hidráulicos convencionales'],
+      apps:['Automóviles','Utilitarios livianos','Vehículos de uso diario'],
+      specs:[{k:'Norma',v:'DOT 3'},{k:'Punto de ebullición',v:'Alto'},{k:'Estabilidad',v:'Térmica'},{k:'Protección',v:'Anticorrosiva'}],
+      pres:['100 cc','200 cc','1 L','5 L','Tambor 200 L'] },
+
+    { id:'dot4', code:'009', cat:'Liq. de Frenos', badge:'Frenos', name:'Líquido de Frenos DOT 4 Plus', img:'assets/p/009.png', ficha:'assets/dot4.png', envase:'Envase × 500 CC',
+      tag:'Potencia de frenado con mayor margen de seguridad.',
+      feats:['Cumple norma DOT 4','Mayor punto de ebullición','Estabilidad térmica superior','Protección anticorrosiva'],
+      bens:['Mayor margen de seguridad','Reduce el riesgo por sobrecalentamiento','Desempeño superior para uso exigente','Apto para vehículos modernos y ABS'],
+      apps:['Vehículos modernos','Sistemas ABS','Uso exigente'],
+      specs:[{k:'Norma',v:'DOT 4'},{k:'Punto de ebullición',v:'Máximo'},{k:'Estabilidad',v:'Térmica superior'},{k:'Calidad',v:'Premium'}],
+      pres:['200 cc','500 cc','1 L','5 L','Tambor 200 L'] },
+
+    { id:'resaltador', code:'010', cat:'Estética', badge:'Estética', name:'Resaltador de Caucho Siliconado', img:'assets/p/010.png', ficha:'assets/resaltador.png', envase:'Envase × 500 CC',
+      tag:'Brillo, protección y terminación profesional para neumáticos.',
+      feats:['Fórmula siliconada','Realza el negro natural del caucho','Efecto brillo uniforme','Protección prolongada'],
+      specs:[{k:'Acabado',v:'Negro intenso'},{k:'Brillo',v:'Duradero'},{k:'Fórmula',v:'Siliconada'},{k:'Uso',v:'Cubiertas y gomas'}],
+      pres:['500 cm³','1 L','5 L'] },
+
+    { id:'lavacristales', code:'011', cat:'Estética', badge:'Estética', name:'Lava Cristales', img:'assets/p/011.png', ficha:'assets/lavacristales.png', envase:'Envase × 500 CC',
+      tag:'Máxima visibilidad en todo momento, con acción anticongelante.',
+      desc:'Formulado para limpiar eficazmente parabrisas y cristales, removiendo suciedad, polvo, grasa e insectos sin dejar vetas. Su fórmula anticongelante evita que el líquido se congele en bajas temperaturas.',
+      feats:['Fórmula concentrada','Acción anticongelante','Limpieza profunda sin rayas','Compatible con sistemas lavaparabrisas','No daña gomas ni plásticos'],
+      bens:['Mejora la visibilidad y la seguridad al conducir','Ideal para uso urbano y de ruta'],
+      specs:[{k:'Tipo',v:'Concentrado'},{k:'Acción',v:'Anticongelante'},{k:'Limpieza',v:'Sin vetas'},{k:'Uso',v:'Urbano y ruta'}],
+      pres:['500 cc','5 L'] },
+
+    { id:'shampoo', code:'012', cat:'Estética', badge:'Estética', name:'Shampoo Siliconado', img:'assets/p/012.png', ficha:'assets/shampoo.png', envase:'Envase × 500 CC',
+      tag:'Limpieza profunda con brillo incorporado.',
+      desc:'Formulado para limpiar eficazmente la carrocería del vehículo, removiendo suciedad, polvo y grasa sin dañar la pintura.',
+      feats:['Limpieza profunda y segura','Realza el color y deja un acabado brillante','Ideal para lavado manual'],
+      bens:['Protege la pintura','Brillo en cada lavado'],
+      specs:[{k:'Tipo',v:'Siliconado'},{k:'Uso',v:'Lavado manual'},{k:'Acabado',v:'Brillante'},{k:'Cuidado',v:'No daña la pintura'}],
+      pres:['500 cm³','1 L','5 L','Tambor 200 L'] },
+
+    { id:'silicona', code:'013', cat:'Estética', badge:'Estética', name:'Silicona Protectora', img:'assets/p/013.png', ficha:'assets/silicona.png', envase:'Envase × 250 CC',
+      tag:'Protección y brillo duradero para plásticos, vinilos y gomas.',
+      desc:'Formulada para proteger, renovar y dar brillo a superficies plásticas, vinílicas y de goma del vehículo. Ideal para interior y exterior, con efecto renovador.',
+      feats:['Fórmula siliconada de alto brillo','Protección contra resequedad y desgaste','Efecto impermeabilizante','Realza el color original','Aroma agradable'],
+      bens:['Devuelve el aspecto original','Protege contra rayos UV','Previene el agrietamiento'],
+      apps:['Tablero','Paneles interiores','Burletes','Paragolpes','Superficies plásticas','Caucho y vinilo'],
+      specs:[{k:'Brillo',v:'Alto'},{k:'Protección',v:'UV / impermeabilizante'},{k:'Uso',v:'Interior y exterior'},{k:'Efecto',v:'Renovador'}],
+      pres:['250 cc','500 cc','5 L'] }
+  ];
+
+  get waBase(){
+    const n = (this.props.whatsappNumber || '5493517075757').replace(/[^0-9]/g,'');
+    return 'https://wa.me/' + n;
+  }
+
+  componentDidMount(){
+    this._prevOpenId = null;
+    this._esc = (e)=>{
+      if(e.key==='Escape'){ this.setState({openId:null, menuOpen:false}); return; }
+      if(e.key==='Tab' && this.state.openId){
+        const modal = document.querySelector('.lq-modal');
+        if(!modal) return;
+        const f = [...modal.querySelectorAll('a[href],button,input,textarea,[tabindex]:not([tabindex="-1"])')].filter(el=>el.offsetParent!==null);
+        if(!f.length) return;
+        const first=f[0], last=f[f.length-1];
+        if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+        else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
+      }
+    };
+    window.addEventListener('keydown', this._esc);
+    this._docClick = (e)=>{ if(this.state.menuOpen && e.target.closest && !e.target.closest('nav')) this.setState({menuOpen:false}); };
+    document.addEventListener('click', this._docClick);
+    this._progress = ()=>{ const el=document.querySelector('[data-progress]'); if(!el) return; const h=document.documentElement; const max=(h.scrollHeight-h.clientHeight)||1; el.style.width=Math.min(100,((h.scrollTop||document.body.scrollTop)/max)*100)+'%'; };
+    window.addEventListener('scroll', this._progress, {passive:true});
+    this._progress();
+    try{
+      this._io = new IntersectionObserver((es)=>{ es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); en.target.setAttribute('data-seen','1'); this._io.unobserve(en.target); } }); }, {threshold:0});
+      this._observe();
+    }catch(e){}
+    this._revealFallback = setTimeout(()=>{ document.querySelectorAll('.lq-reveal:not([data-seen])').forEach(el=>{ el.classList.add('in'); el.setAttribute('data-seen','1'); }); }, 1100);
+    setTimeout(()=>this._countUp(), 360);
+    this._heroFallback = setTimeout(()=>{
+      document.querySelectorAll('.lq-h1 span span').forEach(s=>{ s.style.transform='none'; });
+      const box=document.querySelector('.lq-hero-artbox'); if(box){ box.style.opacity='1'; }
+    }, 1500);
+  }
+  _countUp(){
+    document.querySelectorAll('[data-count]').forEach(el=>{
+      if(el.getAttribute('data-counted')) return;
+      const raw = el.getAttribute('data-count');
+      const target = parseInt(raw,10);
+      if(isNaN(target)) return;
+      el.setAttribute('data-counted','1');
+      const suffix = el.getAttribute('data-suffix') || '';
+      const isYear = target >= 1900;
+      if(isYear){ el.textContent = String(target); return; }
+      const dur = 1200, t0 = performance.now();
+      const step = (t)=>{ const k = Math.min(1,(t-t0)/dur); el.textContent = Math.round(target*(1-Math.pow(1-k,3))).toString() + suffix; if(k<1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    });
+  }
+  _observe(){ if(this._io) document.querySelectorAll('.lq-reveal:not([data-seen])').forEach(el=>this._io.observe(el)); }
+  componentDidUpdate(){
+    const open = this.state.openId;
+    if(open !== this._prevOpenId){
+      this._prevOpenId = open;
+      document.body.style.overflow = open ? 'hidden' : '';
+      if(open){ setTimeout(()=>{ const b=document.querySelector('[data-modal-close]'); if(b) b.focus(); }, 40); }
+      else if(this._lastFocused && this._lastFocused.focus){ try{ this._lastFocused.focus(); }catch(e){} }
+    }
+    this._observe();
+  }
+  componentWillUnmount(){
+    window.removeEventListener('keydown', this._esc);
+    document.removeEventListener('click', this._docClick);
+    window.removeEventListener('scroll', this._progress);
+    if(this._io) this._io.disconnect();
+    if(this._revealFallback) clearTimeout(this._revealFallback);
+    if(this._heroFallback) clearTimeout(this._heroFallback);
+    document.body.style.overflow='';
+  }
+
+  _img(src){ return new Promise((res,rej)=>{ const im=new Image(); im.onload=()=>{ const c=document.createElement('canvas'); c.width=im.naturalWidth; c.height=im.naturalHeight; c.getContext('2d').drawImage(im,0,0); res({dataUrl:c.toDataURL('image/jpeg',0.82), w:im.naturalWidth, h:im.naturalHeight}); }; im.onerror=rej; im.src=src; }); }
+  _loadJsPDF(){ return new Promise((res,rej)=>{ if(window.jspdf && window.jspdf.jsPDF) return res(window.jspdf); const s=document.createElement('script'); s.src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'; s.onload=()=>res(window.jspdf); s.onerror=()=>rej(new Error('cdn')); document.head.appendChild(s); }); }
+  downloadPdf = async () => {
+    if(this.state.pdfBusy) return;
+    this.setState({pdfBusy:true});
+    let lib;
+    try{ lib = await this._loadJsPDF(); }catch(e){ this.setState({pdfBusy:false}); alert('No se pudo cargar el generador de PDF. Verificá tu conexión e intentá de nuevo.'); return; }
+    try{
+      const { jsPDF } = lib;
+      const pages = ['assets/cover.png','assets/refrigerante.png','assets/refrigerante-30.png','assets/dot3.png','assets/dot4.png','assets/resaltador.png','assets/lavacristales.png','assets/shampoo.png','assets/silicona.png','assets/contacto.png'];
+      const doc = new jsPDF({unit:'pt', format:'a4', compress:true});
+      const pw = doc.internal.pageSize.getWidth(), ph = doc.internal.pageSize.getHeight();
+      for(let i=0;i<pages.length;i++){
+        const {dataUrl,w,h} = await this._img(pages[i]);
+        if(i>0) doc.addPage();
+        const r = Math.min(pw/w, ph/h), dw = w*r, dh = h*r;
+        doc.addImage(dataUrl,'JPEG',(pw-dw)/2,(ph-dh)/2,dw,dh);
+      }
+      doc.save('Catalogo-LQ-Factory.pdf');
+    }catch(e){ alert('No se pudo generar el PDF.'); }
+    this.setState({pdfBusy:false});
+  };
+
+  renderVals(){
+    const active = this.state.cat;
+    const tabs = ['Todos','Refrigerantes','Liq. de Frenos','Estética','Agua'];
+    const cats = tabs.map(c=>({
+      label:c,
+      onSel:()=>this.setState({cat:c}),
+      bg: c===active ? '#E2241A' : 'rgba(255,255,255,.04)',
+      color: c===active ? '#fff' : '#cfcfd4',
+      border: c===active ? '#E2241A' : 'rgba(255,255,255,.16)'
+    }));
+    const q = (this.state.query||'').trim().toLowerCase();
+    let filtered = this.products.filter(p=> active==='Todos' || p.cat===active);
+    if(q) filtered = filtered.filter(p=> (p.name+' '+p.badge+' '+p.cat+' '+(p.tag||'')+' '+(p.desc||'')).toLowerCase().includes(q));
+    const count = filtered.length;
+    const list = filtered.map(p=>({ ...p,
+      open:()=>{ this._lastFocused = document.activeElement; this.setState({openId:p.id, menuOpen:false}); },
+      onMove:(e)=>{ const c=e.currentTarget; const r=c.getBoundingClientRect(); const ov=c.querySelector('[data-spot]'); if(ov){ ov.style.opacity='1'; ov.style.background='radial-gradient(240px circle at '+(e.clientX-r.left)+'px '+(e.clientY-r.top)+'px, rgba(226,36,26,.18), transparent 66%)'; } },
+      onLeave:(e)=>{ const ov=e.currentTarget.querySelector('[data-spot]'); if(ov) ov.style.opacity='0'; },
+      onKey:(e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); this.setState({openId:p.id}); } }
+    }));
+
+    const cur = this.products.find(p=>p.id===this.state.openId) || null;
+    const waMain = this.waBase + '?text=' + encodeURIComponent('Hola LQ Factory, quisiera más información sobre la línea de productos.');
+    const waDist = this.waBase + '?text=' + encodeURIComponent('Hola LQ Factory! Me interesa ser distribuidor de la marca.');
+    const curWa = cur ? this.waBase + '?text=' + encodeURIComponent('Hola LQ Factory! Quisiera información sobre: ' + cur.name) : waMain;
+
+    return {
+      brand:this.brand, waMain, waDist, curWa,
+      showMarquee: this.props.showMarquee ?? true,
+      catalogYear: this.props.catalogYear || '2026',
+      faqs: this.faqList.map((f,i)=>({ ...f, open: this.state.faqOpen===i, onToggle: ()=>this.setState(s=>({faqOpen: s.faqOpen===i ? -1 : i})), sign: this.state.faqOpen===i ? '−' : '+' })),
+      milestones: [
+        { year:'2000', num:'2000', suffix:'', title:'Nacimiento', desc:'Arranca LQ Factory fabricando refrigerantes para el automotor.' },
+        { year:'+13', num:'13', suffix:'', title:'Línea completa', desc:'Frenos DOT, estética y mantenimiento suman a la familia de productos.' },
+        { year:'IRAM', num:'0', suffix:'', title:'Certificación', desc:'Calidad respaldada bajo norma IRAM en cada lote.' },
+        { year:'+23', num:'23', suffix:'', title:'Todo el país', desc:'Presencia en 23 provincias con logística nacional propia.' }
+      ],
+      cats, list,
+      countText: count + (count===1 ? ' producto' : ' productos'),
+      noResults: count===0,
+      searchVal: this.state.query,
+      onSearch: (e)=>this.setState({query:e.target.value}),
+      menuOpen: this.state.menuOpen,
+      toggleMenu: ()=>this.setState(s=>({menuOpen:!s.menuOpen})),
+      closeMenu: ()=>this.setState({menuOpen:false}),
+      downloadPdf: this.downloadPdf,
+      pdfLabel: this.state.pdfBusy ? 'Generando PDF...' : 'Descargar catálogo PDF',
+      hasModal: !!cur, cur: cur || {},
+      curImgEl: cur ? React.createElement('img', { src: cur.img, alt: cur.name, style: { display:'block', maxWidth:'100%', maxHeight:'calc(92vh - 60px)', objectFit:'contain' } }) : null,
+      curFeats: cur ? cur.feats : [],
+      curBens: cur ? (cur.bens||[]) : [],
+      curApps: cur ? (cur.apps||[]) : [],
+      curPres: cur ? cur.pres : [],
+      curSpecs: cur ? (cur.specs||[]) : [],
+      hasBens: !!(cur && cur.bens && cur.bens.length),
+      hasApps: !!(cur && cur.apps && cur.apps.length),
+      hasDesc: !!(cur && cur.desc),
+      close: ()=>this.setState({openId:null}),
+      stop: (e)=>{ e.stopPropagation(); }
+    };
+  }
+}
+</script>
+</body>
+</html>

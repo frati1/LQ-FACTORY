@@ -1,0 +1,42 @@
+==========================================================
+  LQ FACTORY — Landing page · Instrucciones para Netlify
+==========================================================
+
+Esta carpeta ya está lista para publicar. Contiene:
+
+  index.html        → la página
+  support.js        → motor que renderiza la página (NO borrar)
+  assets/           → imágenes, logos y renders de producto
+  netlify.toml      → configuración de caché
+  _redirects        → reglas de ruteo
+
+----------------------------------------------------------
+OPCIÓN A — Arrastrar y soltar (la más simple)
+----------------------------------------------------------
+1. Entrá a https://app.netlify.com/drop
+2. Arrastrá ESTA carpeta completa (la carpeta "netlify",
+   no los archivos sueltos) a la ventana.
+3. Listo: Netlify te da una URL del tipo
+   https://nombre-al-azar.netlify.app
+4. Para cambiar el nombre: Site settings → Change site name.
+
+----------------------------------------------------------
+OPCIÓN B — Conectar tu dominio lqfactory.com.ar
+----------------------------------------------------------
+1. En el sitio de Netlify: Domain settings → Add a domain.
+2. Escribí lqfactory.com.ar y seguí los pasos.
+3. Netlify te indica los registros DNS (o nameservers) que
+   tenés que cargar en donde compraste el dominio.
+4. El certificado HTTPS se activa solo, gratis.
+
+----------------------------------------------------------
+NOTAS
+----------------------------------------------------------
+• El número de WhatsApp, el año del catálogo y el marquee
+  están en index.html (buscá "5493517075757" para el número).
+• Para actualizar el catálogo, reemplazá las imágenes dentro
+  de assets/ manteniendo el mismo nombre de archivo.
+• Si cambiás de dominio, actualizá el <link rel="canonical">
+  y las etiquetas og: dentro de index.html.
+
+==========================================================
